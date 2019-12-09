@@ -17,8 +17,37 @@ nav{
 .logo2 > img{
 	 width: 9em;
 }
+.menuu{
+	display: flex;
+	margin-right: 100%;
+
+	flex-direction: row;
+	justify-content: center;
+}
+.fas{
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+}
+.calendar{
+	align-items: center;
+	margin-left: 220px;
+	
+}
+.list{
+	margin-left: 50px;
+}
+.userprof{
+	margin-left: 70px;
+}
+.container-md2{
+	margin-top: 30px;
+	display:flex;
+	justify-content:center;
+}
 .container-md {
   width: 524px !important;
+  margin-top: 40px;
   height: 424px;
   background-color: #ffffff;
   text-decoration-color: gold;
@@ -51,7 +80,7 @@ form {
 
 form > input {
     padding-left: 0.5em;
-    margin: 0 1em 0.5em 1em;
+    margin: 0 1em 0em 1em;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 2px solid #d6d6d6;
     border-radius: 2em;
@@ -72,29 +101,37 @@ form > button {
     line-height: 2.5em;
     font-size: 0.8em;
 }
-button2{
-	margin: 0 10em 10em 10em;
+.text-white-50{
+	margin-left: 5px;
+	flex-direction: row;
+}
+.right-form{
+	display: flex;
+	justify-content: flex-end;
+}
+.button2{
     color: white;
     background: #266DFB 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 2em;
     border: none;
-
     line-height: 2.5em;
     font-size: 1em;
 }
-p2{
+.indeks{
 	text-align: right;
 	font-size: 0.7em;
 }
+
 form > p3{
 	text-align: left;
 	font-size: 0.8em;
 }
+
 form > p4{
 	font-size: 0.6em;
 }
-p5{
+.main{
 	font-size: 1.5em;
 }
 @media
