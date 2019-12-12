@@ -5,7 +5,7 @@
 	
 <div class="container-md ">
   	<div class="logo2"> 
-		<img src="../Public/img/logo2.png">
+		<img src="Views/Public/img/logo2.png">
 	</div>
 	<h5 class="text-muted" >Zaloguj się</h5>
   	<p class="text-muted">Zaloguj się za pomocą e-mail:</p>

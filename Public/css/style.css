@@ -10,6 +10,9 @@ nav{
 	position: relative;
 	background-color: #464646;
 }
+a{
+	color: #eaeaea !important;
+}
 .logo > img {
 	align-content: center;
 	 width: 9em;
@@ -24,29 +27,7 @@ nav{
 	flex-direction: row;
 	justify-content: center;
 }
-.fas{
-	display: flex;
-	max-width: 100%;
-	margin-top: 20px;
-	margin-left: 200px;
-	justify-content: center;
-}
-.calendar{
-	display: flex;
-	align-items: flex-start;
-	flex-direction: row;
-}
-.list{
-	height: 20px;
-	margin-left: 100px;
-}
-.userprof{
-	margin-left: 100px;
-}
-.exit{
-	align-content: center;
-	margin-left: 300px;
-}
+
 .container-md2{
 	margin-top: 40px;
 	display:flex;
@@ -131,7 +112,10 @@ form > button {
 	text-align: right;
 	font-size: 0.7em;
 }
-
+.fa-sign-out-alt{
+	align-content: flex-end;
+	justify-content: flex-end;
+}
 form > p3{
 	text-align: left;
 	font-size: 0.8em;
@@ -143,4 +127,3 @@ form > p4{
 .main{
 	font-size: 1.5em;
 }
-@media

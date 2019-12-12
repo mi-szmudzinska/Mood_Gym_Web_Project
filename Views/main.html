@@ -4,41 +4,52 @@
 <meta charset="utf-8">
 <link rel="Stylesheet" type="text/css" href="../Public/css/style.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 <title>MoodGym</title>
 </head>
 	
 <body>
-<nav class="navbar ">
-	<div class="menuu">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+	<a class="nav-link" href="#">
 		<div class="logo"> 
 			<img src="../Public/img/logowhite.png">
 		</div>
-		<div class="fas">
-			<div class="calendar">
-				<img src="../Public/img/809622-32.png">
-				<p class="text-white-50">Zarezerwuj</p>	
-			</div>
-			
-		<div class="list">
-			<img src="../Public/img/293685-32.png">
-			<p class="text-white-50">Moje zajęcia</p>
-		</div>
-			
-			
-		<div class="userprof">
-			<img src="../Public/img/1608727-32.png">
-		</div>
-			<p class="text-white-50">Profil</p>
-			
-		<div class="exit">
-			<p class="text-white-50">Wyjście</p>
-			<img src="../Public/img/352328-32.png">
-		</div>
-		</div>
-		
-	</div>
+	</a>
+	
+	
+	
+  <div class="navbarNav">
+	  
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+			<i class="far fa-calendar-alt"></i>
+				Zarerwuj 
+		  </a>
+		  
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+			<i class="fas fa-list"></i>
+			Moje zajęcia
+		  </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"> 
+			<i class="fas fa-user"></i>
+			Profil</a>
+      </li>
+	<div class="right">
+		<a class="nav-link" href="#">Wyloguj
+		  <i class="fas fa-sign-out-alt"></i>
+		</a>
+	</div>	
+	</ul>
+
+  </div>
 </nav>
+
 <div class="container-md2">
 	<div align="center">
   	<div class="logo2"> 
@@ -49,7 +60,9 @@
 	</div>
 		<p class="text-muted main">Wszystkie płatności są uregulowane.</p>
 		<div class="right-form">
-			<button class="button2" type="submit">Opłać kolejny miesiąc</button>
+			<button class="button2" type="submit">Opłać kolejny miesiąc
+				<i class="fas fa-arrow-right"></i>
+			</button>
 		</div>
 
 	</div>
