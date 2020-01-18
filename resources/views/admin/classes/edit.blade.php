@@ -11,11 +11,7 @@
                 <h1>@if($user) Edycja użytkownika {{$user->name}} @else Dodawanie nowego użytkownika @endif</h1>
                 <div class="card">
                     <div class="card-body">
-                        @if($user)
-                            <form method="POST" name="EditUser" action="{{route('classes.update')}}">
-                        @else
-                            <form method="POST" name="EditUser" action="{{route('classes.store')}}">
-                        @endif
+                        <form method="POST" name="EditUser" action="@if($user) {{route('classes.update')}} @else {{route('classes.store')}} @endif">
                             @csrf
                             <input name="id" type="hidden" value="{{$user->id ?? ''}}">
                             <div class="form-group">
@@ -62,7 +58,6 @@
                             </div>
                             <a class="btn" href="">Wstecz</a>
                             <button type="submit" class="btn btn-primary">Zapisz</button>
-                        </form>
                         </form>
                     </div>
                 </div>

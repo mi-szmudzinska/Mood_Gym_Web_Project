@@ -23,3 +23,5 @@ Route::get('/admin/classes/edit/{id}', 'Admin\ClassesController@edit')->name('cl
 Route::post('/admin/classes/edit/', 'Admin\ClassesController@update')->name('classes.update');
 Route::get('/admin/classes/create/', 'Admin\ClassesController@create')->name('classes.create');
 Route::post('/admin/classes/create/', 'Admin\ClassesController@store')->name('classes.store');
+
+

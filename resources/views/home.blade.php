@@ -2,21 +2,18 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+    <div class="zero-data">
+        <div class="logo">
+            <img src="{{asset('img/logo2.png')}}" alt="Logo">
+        </div>
+        <div class="icon">
+            <i class="fa fa-check"></i>
+        </div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+        <h1 class="text-center text-faded">Wszystkie płatności są uregulowane</h1>
 
-                    You are logged in!
-                </div>
-            </div>
+        <div class="btn-container mt-4">
+            <a class="btn btn-primary btn-lg" href="#"><i class="fa fa-arrow-right"></i> <span class="btn-text">Opłać kolejny miesiąc</span></a>
         </div>
     </div>
 </div>
