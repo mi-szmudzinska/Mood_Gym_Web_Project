@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateClassesTable extends Migration
+class CreateDaysTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,10 @@ class CreateClassesTable extends Migration
      */
     public function up()
     {
-        Schema::create('classes', function (Blueprint $table) {
+        Schema::create('DaysSeeder', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('type_id');
-            $table->integer('day_id');
-            $table->string('time');
-            $table->integer('places')->default(20);
-            $table->integer('coach_id');
-
+            $table->integer('day_number')->nullable();
+            $table->integer('classes_id')->nullable();
             $table->timestamps();
         });
     }
@@ -32,6 +28,6 @@ class CreateClassesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('classes');
+        Schema::dropIfExists('DaysSeeder');
     }
 }

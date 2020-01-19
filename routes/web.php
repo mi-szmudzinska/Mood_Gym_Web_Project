@@ -17,7 +17,13 @@ Route::get('/', function () {
 
 Auth::routes();
 
+// Site
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profile', 'HomeController@user_profile')->name('user');
+Route::post('/profile/edit', 'HomeController@user_profile_edit')->name('user.edit');
+
+Route::get('/reservation', 'ReservationController@index')->name('reservation.index');
+
 Route::get('/admin/classes', 'Admin\ClassesController@index')->name('classes.index');
 Route::get('/admin/classes/edit/{id}', 'Admin\ClassesController@edit')->name('classes.index.edit');
 Route::post('/admin/classes/edit/', 'Admin\ClassesController@update')->name('classes.update');

@@ -6,9 +6,10 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
-            <div class="logo">
+            <a href="{{route('home')}}" class="logo">
                 <img class="img-fluid" src="{{asset('img/logowhite.png')}}" alt="Logo">
-            </div>
+            </a>
+            @if(Auth::user())
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('logout') }}"
@@ -27,16 +28,17 @@
             <div class="navbar-center">
                 <ul>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-calendar mr-2"></i> Zarezerwuj</a>
+                        <a class="nav-link" href="{{route('reservation.index')}}"><i class="fa fa-calendar mr-2"></i> Zarezerwuj</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-list-ul mr-2"></i> Moje zajęcia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-user mr-2"></i> Profil</a>
+                        <a class="nav-link" href="{{route('user')}}"><i class="fa fa-user mr-2"></i> Profil</a>
                     </li>
                 </ul>
             </div>
+            @endif
             <!-- Right Side Of Navbar -->
             {{--<ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->

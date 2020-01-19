@@ -11356,3 +11356,155 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background-color: #eaeaea;
+}
+
+.navbar-main {
+  position: relative;
+  height: 80px;
+  background-color: #464646;
+  color: #ffff;
+}
+
+.navbar-main .navbar-collapse {
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.navbar-main .navbar-collapse .logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+.navbar-main .nav-item a {
+  color: #d6d6d6;
+  font-size: 18px;
+}
+
+.navbar-main .navbar-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.navbar-main .navbar-center ul {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.card {
+  border-radius: 0;
+  border: 1px solid #464646;
+}
+
+.card .logo-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  padding: 12px 16px 32px;
+}
+
+.card .logo-container img {
+  max-width: 160px;
+  width: auto;
+}
+
+.card .login-header {
+  color: #707070;
+  font-size: 25px;
+}
+
+.mt-150 {
+  margin-top: 150px;
+}
+
+.btn {
+  border-radius: 24px;
+  padding: 8px 24px;
+}
+
+.btn-primary {
+  background-color: #31a3ff;
+  border-color: #31a3ff;
+}
+
+.btn-container {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.btn-container .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.form-control {
+  border-radius: 24px;
+}
+
+.zero-data {
+  margin-top: 120px;
+}
+
+.zero-data .logo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.zero-data .logo img {
+  max-width: 400px;
+}
+
+.zero-data .icon {
+  text-align: center;
+}
+
+.zero-data .icon i {
+  font-size: 200px;
+}
+
+.text-faded {
+  color: #707070;
+}
+
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  max-width: 95%;
+}
+
+.days-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+

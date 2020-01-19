@@ -132,3 +132,10 @@ body {
 .container-fluid {
 	max-width: 95%;
 }
+
+
+.days-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
