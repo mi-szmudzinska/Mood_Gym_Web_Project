@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index')->name('index');
+
 
 Auth::routes();
 
@@ -46,6 +45,8 @@ Route::group(['middleware' => 'admin','prefix' => 'admin'], function () {
 
 
     Route::get('/orders', 'Admin\OrderController@index')->name('admin.orders.index');
+    Route::get('/orders/status', 'Admin\OrderController@status_index')->name('admin.orders.status');
+    Route::get('/orders/status/add', 'Admin\OrderController@add')->name('admin.orders.status.add');
 });
 
 

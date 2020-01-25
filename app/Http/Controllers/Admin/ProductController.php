@@ -24,8 +24,16 @@ class ProductController extends Controller
 
     public function update(Request $request)
     {
+        $message  = '';
+        if(isset($request->id)){
+            $message = 'Produkt został zaktualizowany !';
+        }else{
+            $message = 'Produkt został dodany pomyślnie !';
+        }
         Product::updateOrCreate(['id' => $request->id], $request->all());
-        return back()->with('success', 'Produkt został zaktualizowany !');
+
+
+        return back()->with('success', $message);
     }
 
     public function delete(Request $request)

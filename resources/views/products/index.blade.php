@@ -20,7 +20,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="{{$product->image}}" alt="{{$product->name}}">
+                                <img class="img-fluid" src="{{asset('img/dieta-weganska-zdrowy-jadlospis-i-przepisy-na-5-dni-2428606.jpg')}}" alt="{{$product->name}}">
                             </div>
                             <div class="col-md-8">
                                 <h3>{{$product->name}}</h3>

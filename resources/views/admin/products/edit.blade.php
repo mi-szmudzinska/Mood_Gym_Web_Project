@@ -12,11 +12,11 @@
                     @csrf
                     <div class="form-group">
                         <label for="name">Nazwa produktu</label>
-                        <input class="form-control" type="text" name="name" id="name" value="{{$product->name ?? ''}}">
+                        <input required="required" class="form-control" type="text" name="name" id="name" value="{{$product->name ?? ''}}">
                     </div>
                     <div class="form-group">
                         <label for="price">Cena</label>
-                        <input class="form-control" type="text" name="price" id="price" value="{{$product->price ?? ''}}">
+                        <input required="required" class="form-control" type="text" name="price" id="price" value="{{$product->price ?? ''}}">
                     </div>
                     <div class="form-group">
                         <label for="cat">Kategoria</label>

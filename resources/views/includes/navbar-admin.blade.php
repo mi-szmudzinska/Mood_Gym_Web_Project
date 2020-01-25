@@ -43,6 +43,9 @@
                             <a class="nav-link" href="{{route('admin.categories.index')}}"><i class="fa fa-list-ul mr-2"></i>Kategorie</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="{{route('admin.orders.status')}}"><i class="fa fa-list-ul mr-2"></i>Status zamówień</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="{{route('admin.orders.index')}}"><i class="fa fa-user mr-2"></i>Zamówienia</a>
                         </li>
                     </ul>
