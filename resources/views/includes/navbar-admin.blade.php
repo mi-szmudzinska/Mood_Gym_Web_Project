@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-main">
+<nav class="navbar navbar-expand-md navbar-main navbar-admin">
     <div class="container container-fluid">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -23,7 +23,7 @@
                             @csrf
                         </form>
                     </li>
-                    @if(Auth::user() &&  Auth::user()->role === 'admin')
+                    @if(Auth::user()->role === 'admin')
                         <li class="nav-item">
 
                             <a class="nav-link" href="{{ route('admin.products.index') }}">
@@ -37,13 +37,13 @@
                 <div class="navbar-center">
                     <ul>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('products.index')}}"><i class="fa fa-shopping-cart mr-2"></i> Kup nowe produkty</a>
+                            <a class="nav-link" href="{{route('admin.products.index')}}"><i class="fa fa-shopping-cart mr-2"></i> Produkty</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('orders.index')}}"><i class="fa fa-list-ul mr-2"></i> Moje zamówienia</a>
+                            <a class="nav-link" href="{{route('admin.categories.index')}}"><i class="fa fa-list-ul mr-2"></i>Kategorie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('user')}}"><i class="fa fa-user mr-2"></i> Profil</a>
+                            <a class="nav-link" href="{{route('admin.orders.index')}}"><i class="fa fa-user mr-2"></i>Zamówienia</a>
                         </li>
                     </ul>
                 </div>

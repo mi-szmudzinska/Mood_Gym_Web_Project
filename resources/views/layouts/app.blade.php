@@ -5,7 +5,11 @@
 </head>
 <body>
     <div id="app">
-        @include('includes.navbar')
+        @if(Auth::user() && Auth::user()->role === 'admin')
+            @include('includes.navbar-admin')
+        @else
+            @include('includes.navbar')
+        @endif
         <main class="py-4">
             @yield('content')
         </main>

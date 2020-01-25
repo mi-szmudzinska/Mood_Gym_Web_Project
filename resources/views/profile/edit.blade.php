@@ -46,6 +46,14 @@
                                         <input value="{{$user->pesel}}" type="text" name="pesel" id="phone" class="form-control form-control-lg">
                                     </div>
                                 </div>
+
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="pesel">haslo</label>
+                                        <input value="{{$user->pesel}}" type="text" name="haslo123" id="phone" class="form-control form-control-lg">
+                                    </div>
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-success"><i class="fa fa-save mr-2"></i> Zapisz</button>
                         </form>

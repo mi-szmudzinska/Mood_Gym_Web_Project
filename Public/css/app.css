@@ -11402,7 +11402,8 @@ body {
 
 .card {
   border-radius: 0;
-  border: 1px solid #464646;
+  border: none;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
 }
 
 .card .logo-container {
@@ -11506,5 +11507,13 @@ body {
           justify-content: space-between;
   -webkit-box-align: center;
           align-items: center;
+}
+
+.navbar-admin {
+  background: black;
+}
+
+.max-44 {
+  max-height: 44px;
 }
 
