@@ -10,10 +10,10 @@
             <i class="fa fa-check"></i>
         </div>
 
-        <h1 class="text-center text-faded">Wszystkie płatności są uregulowane</h1>
+        <h1 class="text-center text-faded">Wszystkie zamówienia opłacone</h1>
 
         <div class="btn-container mt-4">
-            <a class="btn btn-primary btn-lg" href="#"><i class="fa fa-arrow-right"></i> <span class="btn-text">Opłać kolejny miesiąc</span></a>
+            <a class="btn btn-primary btn-lg" href="#"><i class="fa fa-arrow-right"></i> <span class="btn-text">Twoje diety</span></a>
         </div>
     </div>
 </div>

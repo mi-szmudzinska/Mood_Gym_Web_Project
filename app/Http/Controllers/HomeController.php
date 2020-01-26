@@ -43,6 +43,31 @@ class HomeController extends Controller
 
         return redirect()->back()->with('success' , 'Zaminy zapisane pomyślnie');
     }
+    public function user_change_password()
+    {
+        return view('profile.password_change');
+    }
+
+    public function user_change_password_edit(Request $request)
+    {
+        $password = Auth::User()->password;
+
+        $this->validate($request, [
+            'password' => 'required',
+            'new_password' => 'required|min:6',
+            'confirm_password' => 'required|same:new_password',
+        ]);
+
+        if (!isset($request->password)){
+
+            return back()->with('error', 'You have entered wrong password');
+
+        } else {
+
+            return "Hasł zostało zmienione!";
+
+        }
+    }
 
     public function show_products()
     {
@@ -65,4 +90,5 @@ class HomeController extends Controller
 
         return back()->with('success', 'Zamówiono produkt');
     }
+
 }

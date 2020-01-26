@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile', 'HomeController@user_profile')->name('user');
 Route::post('/profile/edit', 'HomeController@user_profile_edit')->name('user.edit');
+Route::get('/profile/change_password', 'HomeController@user_change_password')->name('user.change.password');
 
 
 Route::get('/products', 'HomeController@show_products')->name('products.index');

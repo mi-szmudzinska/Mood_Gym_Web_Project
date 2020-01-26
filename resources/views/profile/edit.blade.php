@@ -1,7 +1,9 @@
 @extends('layouts.app')
 @section('content')
     <div class="container mt-5">
-        <div class="row">
+
+
+            <div class="row">
             <div class="col-md-8 offset-2">
                 <h1 class="text-faded">Dane personalne</h1>
                 @if (session('success'))
@@ -11,6 +13,8 @@
                 @endif
                 <form method="POST" action="{{route('user.edit')}}">
                             @csrf
+                    <div class="card">
+                        <div class="card-body">
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label for="exampleInputEmail1">Imię</label>
@@ -47,16 +51,12 @@
                                     </div>
                                 </div>
 
-
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="pesel">haslo</label>
-                                        <input value="{{$user->pesel}}" type="text" name="haslo123" id="phone" class="form-control form-control-lg">
-                                    </div>
-                                </div>
                             </div>
                             <button type="submit" class="btn btn-success"><i class="fa fa-save mr-2"></i> Zapisz</button>
-                        </form>
+                            <a href="{{ route('user.change.password') }}" class="btn btn-warning"><i class="fa fa-save mr-2"></i>Zmień hasło</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
